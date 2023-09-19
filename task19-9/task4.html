@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // Original Student object
+const Student = {
+  name: "Orange",
+  age: 3,
+  Location: 2,
+};
+
+// Create a new object (student2) inheriting from Student
+const student2 = Object.create(Student);
+
+// Modify the name property in student2
+student2.name = "Apple";
+
+// Create a third object (Student3) inheriting from student2
+const Student3 = Object.create(student2);
+
+console.log(Student3.name); // Output: "Apple"
+console.log(Student3.age); // Output: 3
+console.log(Student3.Location); // Output: 2
+
+    </script>
+</body>
+</html>
