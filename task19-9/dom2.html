@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Create the main div
+const mainDiv = document.createElement('div');
+mainDiv.className = 'Orange';
+
+// Create the first child div
+const firstChildDiv = document.createElement('div');
+firstChildDiv.className = 'Orange2';
+firstChildDiv.setAttribute('title', '');
+
+// Create the paragraphs and add text content
+const firstParagraph1 = document.createElement('p');
+firstParagraph1.textContent = 'Paragraph1.';
+
+const firstParagraph2 = document.createElement('p');
+firstParagraph2.textContent = ' paragraph 2.';
+
+// Append paragraphs to the first child div
+firstChildDiv.appendChild(firstParagraph1);
+firstChildDiv.appendChild(firstParagraph2);
+firstChildDiv.appendChild(document.createComment('Coding Academy'));
+
+// Create the second child div
+const secondChildDiv = document.createElement('div');
+secondChildDiv.className = 'Orange3';
+secondChildDiv.setAttribute('title', 'cohort');
+
+// Create the paragraphs and add text content
+const secondParagraph1 = document.createElement('p');
+secondParagraph1.textContent = 'second div paragraph1';
+
+const secondParagraph2 = document.createElement('p');
+secondParagraph2.textContent = 'second div paragraph2.';
+
+// Append paragraphs to the second child div
+secondChildDiv.appendChild(secondParagraph1);
+secondChildDiv.appendChild(secondParagraph2);
+secondChildDiv.appendChild(document.createComment('Coding Academy'));
+
+// Append child divs to the main div
+mainDiv.appendChild(firstChildDiv);
+mainDiv.appendChild(secondChildDiv);
+
+// Append the main div to the document body
+document.body.appendChild(mainDiv);
+
+</script>
+</html>

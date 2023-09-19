@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom1</title>
+</head>
+<body>
+    <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+      <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+      <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+      <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+      <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+      <div>
+        <img decoding="async" className="star" src="#" alt="" >
+      </div>
+</body>
+<script>
+    // Get all the images on the page
+const images = document.querySelectorAll('img');
+
+// Loop through each image
+images.forEach((image) => {
+  // Check if the image's ID or class matches the logo image
+  if (image.decoding === 'async' || image.className === 'star') {
+    // Update the src attribute
+    image.src = 'https://elzero.org/wp-content/themes/elzero/imgs/logo.png';
+    
+    // Update the alt attribute
+    image.alt = 'Elzero Logo';
+  }
+});
+
+</script>
+</html>
